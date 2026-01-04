@@ -1,0 +1,15 @@
+*{box-sizing:border-box;font-family:Segoe UI, Roboto, Arial, sans-serif}
+body{background:#f3f4f6;color:#111;margin:0;padding:32px;display:flex;align-items:center;justify-content:center;height:100vh}
+.container{width:320px}
+h1{margin:0 0 12px;font-size:20px;text-align:center}
+.calculator{background:#2b2b2b;padding:12px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,.12)}
+#display{width:100%;height:56px;border-radius:8px;border:0;padding:6px 12px;font-size:20px;line-height:56px;background:#1e1e1e;color:#fff;text-align:right}
+.buttons{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin-top:12px}
+.buttons button{height:48px;border-radius:8px;border:0;background:#444;color:#fff;font-size:16px;cursor:pointer}
+.buttons button#equals{background:#ffb86b;color:#000;font-weight:700}
+.buttons button#clear{background:#ff6b6b}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,0.5);display:none;align-items:center;justify-content:center}
+.modal[aria-hidden="false"]{display:flex}
+.modal-content{background:#222;color:#fff;padding:22px;border-radius:8px;min-width:320px;text-align:center}
+.modal pre{font-family:'Courier New', Courier, monospace;font-size:22px;margin:0 0 12px;white-space:pre;line-height:1.1;text-align:center}
+.modal button{padding:8px 12px;border-radius:6px;border:0;background:#555;color:#fff}
